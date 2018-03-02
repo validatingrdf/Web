@@ -6,63 +6,47 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/tutorial.css">
   </head>
   <body>
-  <div id="wrapper">
+ <div id="wrapper">
    <div id="header">
 	<div id="logo">
-     <a href="http://2016.eswc-conferences.org/" 
-        title="13th ESWC 2016">
-       <img src="images/ESWC2016-Logo.png" alt="13th ESWC 2016" />
+     <a href="https://2018.eswc-conferences.org/" 
+        title="15th ESWC 2018">
+       <img src="images/ESWC-Logo2018c.png" alt="15th ESWC 2018" />
      </a>
   </div>
  </div>
 
-<div id="content">
+
+ <div id="content">
 <hr/>
 <h1>
- RDF and Linked Data Validation - ESWC'16 Tutorial
+ Validating RDF Tutorial - ESWC'18 Tutorial
 </h1>
 
-<h3>Slides</h3>
-
-<ul>
-<li>RDF Validation (<a href="http://www.slideshare.net/jelabra/rdf-validation-tutorial">slideshare</a>)</li>
-<li>Overview of RDF Data Model (<a href="http://www.slideshare.net/jelabra/rdf-data-model">slideshare</a>)</li>
-<li>ShEx by Example (<a href="http://www.slideshare.net/jelabra/shex-by-example">slideshare</a>)</li>
-<li>SHACL by example (<a href="http://www.slideshare.net/jelabra/shacl-by-example">slideshare</a>)</li>
-<li>ShEx vs SHACL (<a href="http://www.slideshare.net/jelabra/shex-vs-shacl">slideshare</a>)</li>
-<li>Future work and applications (<a href="http://www.slideshare.net/jelabra/rdf-validation-future-work-and-applications">slideshare</a>)</li>
-</ul>
-
-<p>Examples and other material will be available at 
- <a href="https://github.com/weso/RDFValidation_ESWC16">this repository</a></p>
-            
-<br>
 <h3>Abstract</h3>
 <p>
-RDF promises a distributed database of repurposable, machine-readable data.
-Although the benefits of RDF for data representation and integration are indisputable, it has not been embraced by everyday programmers and software architects who care about safely creating and accessing well-structured data.
-Semantic web projects still lack some common tools and methodologies that are available in more conventional settings to describe and validate data.
-In particular, relational databases and XML have popular technologies for defining data schemas and validating data.
-These currently have no analog in RDF.
-
-<p>
-<a href="http://shex.io/">Shape Expressions (ShEx)</a> has been designed as an intuitive and human-friendly high level language for RDF validation. 
-
-<p>
-In 2014, the W3c chartered a working group called <a href="http://www.w3.org/2014/data-shapes/wiki/Main_Page">RDF Data Shapes</a> to produce a language for defining structural constraints on RDF graphs. The proposed technology has been called SHACL (Shapes Constraint Language) and 
-a <a href="http://www.w3.org/TR/2015/WD-shacl-20151008">first public working draft</a> has been published in October, 2015.
-
-<p>In this tutorial we will present both ShEx and SHACL using examples and RDF data modelling exercises.
-
-<p>Like the popular 
-<a href="http://www.cambridgesemantics.com/semantic-university/sparql-by-example">SPARQL by example</a> 
-tutorial, this <a href="http://weso.github.io/RDFValidation_ESWC16/">tutorial</a> includes 
-step-by-step instructions with examples followed by exercises. 
-Participants can download validation tools to use locally or use web-based interfaces 
-like <a href="http://rdfshape.weso.es">RDFShape</a> or 
-<a href="http://www.w3.org/2013/ShEx/FancyShExDemo">W3C ShEx Workbench</a>.
-</p>
-
+    RDF promises a distributed database of repurposable, machine-readable data.
+    Although the benefits of RDF for data representation and integration are indisputable, 
+    it has not been embraced by everyday programmers and software architects who care about 
+    safely creating and accessing well-structured data.
+    Semantic web projects still lack some common tools and methodologies that are available 
+    in more conventional settings to describe and validate data.
+    In particular, relational databases and XML have popular technologies for defining data schemas and validating 
+    data which had no analog in RDF.</p>
+    
+<p>Two technologies have been proposed for RDF validation: 
+    Shape Expressions (ShEx) and Shapes Constraint Language (SHACL).</p>
+    
+<p>ShEx was designed as an intuitive and human-friendly high level language for RDF validation in 2014. ShEx 2.0 has recently been proposed by 
+    the <a href="https://www.w3.org/community/shex/">W3C ShEx community group</a>.</p>
+    
+<p>SHACL was proposed by the <a href="https://www.w3.org/2014/data-shapes/">Data Shapes Working Group</a> 
+   and accepted as a <a href="https://www.w3.org/TR/shacl/">W3C Recommendation</a> in July 2017.</p>
+    
+<p>This tutorial, presented by the authors of the <a href="http://book.validatingrdf.com/">Validating RDF data</a> book,
+  will describe both ShEx and SHACL using examples, 
+  showing the rationales for their designs, a comparison of the two, and some example applications.</p>
+ 
 <h3>Overview</h3>
 <p>RDF is growing in popularity for both data transfer and data storage/recall.
 In both of these capacities, it is important to describe and verify conformance with 
@@ -152,12 +136,12 @@ Like <i>SPARQL by Example</i>, this is intended to introduce the audience to a n
 
 <h3>Tutoring team</h3>
 <ul>
-<li><a href="http://di002.edv.uniovi.es/~labra/">Jose Emilio Labra Gayo</a>.
+<li><a href="http://labra.weso.es">Jose Emilio Labra Gayo</a>.
  Associate Professor, University of Oviedo, Spain. He is the main researcher of the <a href="http://www.weso.es">WESO research group</a>. 
  He is a member of the RDF Data Shapes working group and the chairman of the 
  Best Practices for Multilingual Linked Open Data community Group. 
- He implemented a Shape Expressions library in Scala called <a href="http://labra.github.io/ShExcala/">ShExcala</a> 
- and maintains the online RDF validator service <a href="http://rdfshape.weso.es/">RDFShape</a>. 
+ He implemented a ShEx/SHACL library in Scala called <a href="http://labra.github.io/Shaclex/">SHACLEX</a> 
+ and maintains the online RDF validator service <a href="http://shaclex.validatingrdf.com/">RDFShape</a>. 
  
 <li><a href="http://www.w3.org/People/Eric/">Eric Prud'hommeaux</a>. W3C staff contact 
  for the Health Care and Life Sciences Interest Group, 
@@ -193,16 +177,35 @@ in the RDF Data shapes working group.
 
 <h3>Registration</h3>
 
-<p>To register, visit: <a href="http://2016.eswc-conferences.org/">http://2016.eswc-conferences.org/</a>
+<p>To register, visit: <a href="https://2018.eswc-conferences.org/registration/">https://2018.eswc-conferences.org/registration/</a>
 
 <h3>Schedule</h3>
 
-The tutorial will be given on 30th May, 9h-12:30h (see <a href="http://2016.eswc-conferences.org/program/workshops-tutorials">Conference Program</a>)
+The tutorial will be given on 3rd or 4th June, 9h-12:30h (see <a href="https://2018.eswc-conferences.org/program/">Conference Program</a>)
+
+<h3>Slides from 2016 tutorial</h3>
+
+These slides will be updated in the next months.
+
+<ul>
+<li>RDF Validation (<a href="http://www.slideshare.net/jelabra/rdf-validation-tutorial">slideshare</a>)</li>
+<li>Overview of RDF Data Model (<a href="http://www.slideshare.net/jelabra/rdf-data-model">slideshare</a>)</li>
+<li>ShEx by Example (<a href="http://www.slideshare.net/jelabra/shex-by-example">slideshare</a>)</li>
+<li>SHACL by example (<a href="http://www.slideshare.net/jelabra/shacl-by-example">slideshare</a>)</li>
+<li>ShEx vs SHACL (<a href="http://www.slideshare.net/jelabra/shex-vs-shacl">slideshare</a>)</li>
+<li>Future work and applications (<a href="http://www.slideshare.net/jelabra/rdf-validation-future-work-and-applications">slideshare</a>)</li>
+</ul>
+
+<p>Examples and other material will be available at 
+ <a href="https://github.com/validatingrdf/Tutorial">this repository</a></p>
+            
+<br>
 
 
 </div>
 
 
 </div>
-  </body>
+
+</body>
 </html>
