@@ -1,0 +1,208 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>RDF Validation - ISWC'18 Tutorial</title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/tutorial.css">
+  </head>
+  <body>
+  <div id="wrapper">
+   <div id="header">
+	<div id="logo">
+     <a href="http://2016.eswc-conferences.org/" 
+        title="13th ESWC 2016">
+       <img src="images/ESWC2016-Logo.png" alt="13th ESWC 2016" />
+     </a>
+  </div>
+ </div>
+
+<div id="content">
+<hr/>
+<h1>
+ RDF and Linked Data Validation - ESWC'16 Tutorial
+</h1>
+
+<h3>Slides</h3>
+
+<ul>
+<li>RDF Validation (<a href="http://www.slideshare.net/jelabra/rdf-validation-tutorial">slideshare</a>)</li>
+<li>Overview of RDF Data Model (<a href="http://www.slideshare.net/jelabra/rdf-data-model">slideshare</a>)</li>
+<li>ShEx by Example (<a href="http://www.slideshare.net/jelabra/shex-by-example">slideshare</a>)</li>
+<li>SHACL by example (<a href="http://www.slideshare.net/jelabra/shacl-by-example">slideshare</a>)</li>
+<li>ShEx vs SHACL (<a href="http://www.slideshare.net/jelabra/shex-vs-shacl">slideshare</a>)</li>
+<li>Future work and applications (<a href="http://www.slideshare.net/jelabra/rdf-validation-future-work-and-applications">slideshare</a>)</li>
+</ul>
+
+<p>Examples and other material will be available at 
+ <a href="https://github.com/weso/RDFValidation_ESWC16">this repository</a></p>
+            
+<br>
+<h3>Abstract</h3>
+<p>
+RDF promises a distributed database of repurposable, machine-readable data.
+Although the benefits of RDF for data representation and integration are indisputable, it has not been embraced by everyday programmers and software architects who care about safely creating and accessing well-structured data.
+Semantic web projects still lack some common tools and methodologies that are available in more conventional settings to describe and validate data.
+In particular, relational databases and XML have popular technologies for defining data schemas and validating data.
+These currently have no analog in RDF.
+
+<p>
+<a href="http://shex.io/">Shape Expressions (ShEx)</a> has been designed as an intuitive and human-friendly high level language for RDF validation. 
+
+<p>
+In 2014, the W3c chartered a working group called <a href="http://www.w3.org/2014/data-shapes/wiki/Main_Page">RDF Data Shapes</a> to produce a language for defining structural constraints on RDF graphs. The proposed technology has been called SHACL (Shapes Constraint Language) and 
+a <a href="http://www.w3.org/TR/2015/WD-shacl-20151008">first public working draft</a> has been published in October, 2015.
+
+<p>In this tutorial we will present both ShEx and SHACL using examples and RDF data modelling exercises.
+
+<p>Like the popular 
+<a href="http://www.cambridgesemantics.com/semantic-university/sparql-by-example">SPARQL by example</a> 
+tutorial, this <a href="http://weso.github.io/RDFValidation_ESWC16/">tutorial</a> includes 
+step-by-step instructions with examples followed by exercises. 
+Participants can download validation tools to use locally or use web-based interfaces 
+like <a href="http://rdfshape.weso.es">RDFShape</a> or 
+<a href="http://www.w3.org/2013/ShEx/FancyShExDemo">W3C ShEx Workbench</a>.
+</p>
+
+<h3>Overview</h3>
+<p>RDF is growing in popularity for both data transfer and data storage/recall.
+In both of these capacities, it is important to describe and verify conformance with 
+a particular graph structure.
+While the Semantic Web is an environment where anybody can say anything about any topic, 
+we still need to make sure that 
+clinical, genetic, manufacturing, etc. databases capture data in a predictable way.
+
+<p>When we record or exchange data, programs or human operators are 
+expected to synthesize and interpret data.
+In order to safely process data, this additionally requires that the data maintains a 
+specified structure and can be described by that structure.
+
+<p>Non-RDF data storage systems offer and rely on schemas both to increase data integrity 
+and to enable efficient storage and static query analysis for optimization.
+SQL's Data Definition Language completely constrains what may appear in 
+an SQL database (with minor exceptions like some databases that don't ensure homogeneity in a column).
+XML's use of W3C XML Schema and Relax NG typically involves validation on data creation and ingestion.
+Even JSON Schema is growing in popularity as that developer community recognizes the need 
+for basic structural description.
+
+<p>RDF, and graph stores in general, don't demand an initial schema definition like SQL, 
+but operate more like XML where the basic language allows many structural constructs 
+but specific applications impose further practical demands. In that sense 
+ShEx and SHACL work with the open spirit of RDF (natively schema-less), 
+while giving developers and data architects a tool to impose and 
+validate some specific constraints.
+
+<p>The practicalities of data exchange faced by the <a href="http://open-services.net/">Open Services Life Cycles</a> 
+collaboration lead to the development of 
+<a href="http://www.w3.org/Submission/2014/SUBM-shapes-20140211/">Resource Shapes</a>, 
+a language for communicating the data structures managed by 
+<a href="http://www.w3.org/TR/ldp/">Linked Data Platform</a> endpoints.
+Likewise, 
+the <a href="http://dublincore.org/">Dublin Core</a> defined 
+<a href="http://dublincore.org/documents/dc-dsp/">Description Set Profiles</a> 
+for describing constraints and expectations about bibliographic records.
+None of these underwent a standardization and implementation phase leading to 
+widely deployed, general-purpose validation tools.
+
+<p>The current work developed by the Shape Expressions community and 
+<a href="http://www.w3.org/2014/data-shapes/wiki/Main_Page">W3c Data Shapes Working group</a> 
+may help to improve RDF adoption in industrial scenarios where 
+there is a real need to ensure the structure of RDF data, 
+both in production and consumption. 
+
+<p>More information about ShEx is available at the <a href="http://shex.io/primer/">ShEx Primer</a> 
+and about SHACL at the <a href="http://www.w3.org/TR/shacl/">First Public Working Draft</a>.
+
+<h3>Topics</h3>
+<ul>
+<li>RDF Data Model
+<li> Shape Expressions
+ <ul>
+  <li>Shapes and basic triple constraints
+  <li>Groupings and cardinality
+  <li>Value references, recursion and negation
+  <li>Semantic actions
+ </ul>
+<li>SHACL 
+ <ul> 
+  <li>Shapes
+  <li> Scopes 
+  <li>Constraints: property constraints, property pair constraints, constraint operators: Or, And and Not
+  <li>Other features: SPARQL based constraints and templates
+ </ul>
+<li>Applications and use cases: Linked data portals, Clinical data, etc.
+</ul>
+
+<h3>Goals</h3>
+<ul>
+<li> Users will understand use cases for RDF validation.
+<li> Users will be able to create their own RDF data shapes or schemas and validate instance data against them.
+<li> They will see how RDF validation works in ShEx and SHACL. 
+<li> Users will understand some advanced validation scenarios like cyclic data models, negations or recursion as well as more complex definitions.
+<li> Hands-on experience will leave them comfortable using existing tools to solve practical needs in communicating schemas and verifying instance data conformance.
+<li> Time-permitting, we will dive into the details of the underlying technologies 
+ and algorithms for RDF validation.
+</ul>
+
+<h3>Audience</h3>
+
+The audience should be comfortable either with using git and a JVM or javascript VM like node, <i>or</i> 
+just their web browser.
+A rudimentary knowledge of RDF and Turtle is expected.
+Like <i>SPARQL by Example</i>, this is intended to introduce the audience to a new (to them) language.
+
+<h3>Tutoring team</h3>
+<ul>
+<li><a href="http://di002.edv.uniovi.es/~labra/">Jose Emilio Labra Gayo</a>.
+ Associate Professor, University of Oviedo, Spain. He is the main researcher of the <a href="http://www.weso.es">WESO research group</a>. 
+ He is a member of the RDF Data Shapes working group and the chairman of the 
+ Best Practices for Multilingual Linked Open Data community Group. 
+ He implemented a Shape Expressions library in Scala called <a href="http://labra.github.io/ShExcala/">ShExcala</a> 
+ and maintains the online RDF validator service <a href="http://rdfshape.weso.es/">RDFShape</a>. 
+ 
+<li><a href="http://www.w3.org/People/Eric/">Eric Prud'hommeaux</a>. W3C staff contact 
+ for the Health Care and Life Sciences Interest Group, 
+ RDF Data Shapes (RDF Validation), LDP, RDF 1.1, 
+ SPARQL 1.1, RDB2RDF, SPARQL 1.0, SAWSDL and XML Protocol Working Groups. 
+ He has developed and designed multiple languages, including a significant contribution to 
+ SPARQL and ShExC (Shape Expressions Compact syntax). 
+ He developed the <a href="http://www.w3.org/2013/ShEx/FancyShExDemo">Fancy ShEx Demo</a> 
+ to promote understanding about and exploitation of ShExC.
+ 
+<li><a href="http://www.mayo.edu/research/faculty/solbrig-harold-ralph/bio-20022700">Harold Solbrig</a>, Mayo Clinic, USA. 
+Harold has been involved in computational semantics 
+and information modeling since the early 1970's.   
+He represents the Mayo Clinic on multiple standards organizations 
+including Health Level Seven (HL7), the World Health Organization (WHO), 
+the International Standards Organization (ISO), the Object Management Group (OMG) 
+and the World Wide Web Consortium (W3C).  
+His focus has been standardized models and API's for terminological resources and 
+the tools to represent them in clinical and biomedical data.  
+He is currently working the representation of UML and constraint based modeling paradigms 
+as RDF constraints and the linking of RDF data with ontological resources.  
+Mr. Solbrig has helped develop the ShEx language and is an active participant 
+in the RDF Data shapes working group. 
+
+<li><a href="http://www.lifl.fr/~boneva/">Iovka Boneva</a> Associate Professor at 
+ University of Lille, France, and member of the Links research project affiliated to 
+ Inria -- Lille Nord Europe and CRIStAL (Centre de Recherche en Informatique, Signal et Automatique). 
+ She has been working on expressive languages for describing and querying tree-structured data, 
+ and more recently on data exchange for relational and graph data. 
+ She is member of the W3C RDF Data Shapes Working Group, and has developed the theoretical 
+ foundations of the Shape Expressions Language.
+</ul>
+
+<h3>Registration</h3>
+
+<p>To register, visit: <a href="http://2016.eswc-conferences.org/">http://2016.eswc-conferences.org/</a>
+
+<h3>Schedule</h3>
+
+The tutorial will be given on 30th May, 9h-12:30h (see <a href="http://2016.eswc-conferences.org/program/workshops-tutorials">Conference Program</a>)
+
+
+</div>
+
+
+</div>
+  </body>
+</html>
