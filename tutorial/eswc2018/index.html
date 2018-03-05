@@ -1,38 +1,40 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>RDF Validation - ESWC'16 Tutorial</title>
-    <link rel="stylesheet" type="text/css" href="stylesheets/tutorial.css">
-  </head>
-  <body>
- <div id="wrapper">
-  <div id="header">
-	<div id="logo">
-     <a href="https://2018.eswc-conferences.org/" 
-        title="15th ESWC 2018">
-       <img src="images/ESWC-Logo2018c.png" alt="15th ESWC 2018" />
-     </a>
+ <head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Validating RDF data - ESWC'18 Tutorial</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+  crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="stylesheets/tutorial.css">
+
+</head>
+<body>
+
+<div id="wrapper">
+ 
+ <header>
+  <div id="logo">
+    <a href="https://2018.eswc-conferences.org/" title="ESWC'18">
+      <img src="images/logo.png" alt="ESWC'18 conference link" />
+    </a>
   </div>
+ <h1>Validating RDF data - ESWC'18 Tutorial</h1>
+</header>
 
 
- <div id="content">
-<hr/>
-<h1>Validating RDF Tutorial - ESWC'18 Tutorial</h1>
-
+<div class="container">
 <h3>Abstract</h3>
-<p>
-    RDF promises a distributed database of repurposable, machine-readable data.
-    Although the benefits of RDF for data representation and integration are indisputable, 
-    it has not been embraced by everyday programmers and software architects who care about 
-    safely creating and accessing well-structured data.
-    Semantic web projects still lack some common tools and methodologies that are available 
-    in more conventional settings to describe and validate data.
-    In particular, relational databases and XML have popular technologies for defining data schemas and validating 
-    data which had no analog in RDF.</p>
-    
+<p>RDF was proposed as a graph-based data model which became a key part of the 
+Semantic Web vision. 
+Although the benefits of RDF for data representation and integration are indisputable, 
+it has not been embraced by everyday programmers and software architects who care about safely creating and accessing well-structured data.
+Semantic web projects still lack some common tools and methodologies that are available in more conventional settings to describe and validate data.
+In particular, relational databases and XML have popular technologies for defining data schemas and validating data which had no analog in RDF.
+
 <p>Two technologies have been proposed for RDF validation: 
-    Shape Expressions (ShEx) and Shapes Constraint Language (SHACL).</p>
+Shape Expressions (ShEx) and Shapes Constraint Language (SHACL). 
     
 <p>ShEx was designed as an intuitive and human-friendly high level language for RDF validation in 2014. ShEx 2.0 has recently been proposed by 
     the <a href="https://www.w3.org/community/shex/">W3C ShEx community group</a>.</p>
@@ -91,7 +93,7 @@ there is a real need to ensure the structure of RDF data,
 both in production and consumption. 
 
 <p>More information about ShEx is available at the <a href="http://shex.io/primer/">ShEx Primer</a> 
-and about SHACL at the <a href="http://www.w3.org/TR/shacl/">First Public Working Draft</a>.
+and about SHACL at the <a href="http://www.w3.org/TR/shacl/">recommendation</a>.
 
 <h3>Topics</h3>
 <ul>
@@ -100,17 +102,19 @@ and about SHACL at the <a href="http://www.w3.org/TR/shacl/">First Public Workin
  <ul>
   <li>Shapes and basic triple constraints
   <li>Groupings and cardinality
-  <li>Value references, recursion and negation
+  <li>References and logical operators
+  <li>Shape maps
   <li>Semantic actions
  </ul>
 <li>SHACL 
  <ul> 
   <li>Shapes
-  <li> Scopes 
+  <li>Target declarations
   <li>Constraints: property constraints, property pair constraints, constraint operators: Or, And and Not
   <li>Other features: SPARQL based constraints and templates
  </ul>
 <li>Applications and use cases: Linked data portals, Clinical data, etc.
+<li>Comparing ShEx and SHACL
 </ul>
 
 <h3>Goals</h3>
@@ -126,10 +130,7 @@ and about SHACL at the <a href="http://www.w3.org/TR/shacl/">First Public Workin
 
 <h3>Audience</h3>
 
-The audience should be comfortable either with using git and a JVM or javascript VM like node, <i>or</i> 
-just their web browser.
-A rudimentary knowledge of RDF and Turtle is expected.
-Like <i>SPARQL by Example</i>, this is intended to introduce the audience to a new (to them) language.
+<p>Some rudimentary knowledge of RDF and Turtle is expected, although a short introduction to the RDF data model will be done.</p>
 
 <h3>Tutoring team</h3>
 <ul>
@@ -149,19 +150,10 @@ Like <i>SPARQL by Example</i>, this is intended to introduce the audience to a n
  He developed the <a href="http://www.w3.org/2013/ShEx/FancyShExDemo">Fancy ShEx Demo</a> 
  to promote understanding about and exploitation of ShExC.
  
-<li><a href="http://www.mayo.edu/research/faculty/solbrig-harold-ralph/bio-20022700">Harold Solbrig</a>, Mayo Clinic, USA. 
-Harold has been involved in computational semantics 
-and information modeling since the early 1970's.   
-He represents the Mayo Clinic on multiple standards organizations 
-including Health Level Seven (HL7), the World Health Organization (WHO), 
-the International Standards Organization (ISO), the Object Management Group (OMG) 
-and the World Wide Web Consortium (W3C).  
-His focus has been standardized models and API's for terminological resources and 
-the tools to represent them in clinical and biomedical data.  
-He is currently working the representation of UML and constraint based modeling paradigms 
-as RDF constraints and the linking of RDF data with ontological resources.  
-Mr. Solbrig has helped develop the ShEx language and is an active participant 
-in the RDF Data shapes working group. 
+<li><a href="http://kontokostas.com/">Dimitris Kontokostas</a>. 
+Knowledge Engineer and Semantic Web researcher at the University of Leipzig and the DBpedia Association. 
+He has been working on knowledge representation and knowledge management of large-scale knowledge graphs and data quality. 
+Dimitris is a member of the RDF Data Shapes working group, a member and the chairman of the Shape Expressions Community Group and co-editor of SHACL. He is the creator of RDFUnit, a tool and unit-testing framework for RDF validation that supports SHACL, OSLC Resource Shapes and DC Description Set Profiles. 
 
 <li><a href="http://www.lifl.fr/~boneva/">Iovka Boneva</a> Associate Professor at 
  University of Lille, France, and member of the Links research project affiliated to 
@@ -170,17 +162,20 @@ in the RDF Data shapes working group.
  and more recently on data exchange for relational and graph data. 
  She is member of the W3C RDF Data Shapes Working Group, and has developed the theoretical 
  foundations of the Shape Expressions Language.
+
 </ul>
 
 <h3>Registration</h3>
 
-<p>To register, visit: <a href="https://2018.eswc-conferences.org/registration/">https://2018.eswc-conferences.org/registration/</a>
+<p>To register, visit: 
+<a href="https://2018.eswc-conferences.org/registration/">ESWC'18 registration</a>
 
 <h3>Schedule</h3>
 
-The tutorial will be given on 3rd or 4th June, 9h-12:30h (see <a href="https://2018.eswc-conferences.org/program/">Conference Program</a>)
+<p>The tutorial will be given on 3rd or 4th June, 2018 (see <a href="https://2018.eswc-conferences.org/program/">Conference Program</a>)
+</p>
 
-<h3>Slides from 2016 tutorial</h3>
+<h3>Slides from ESWC'2016 tutorial</h3>
 
 These slides will be updated in the next months.
 
@@ -198,7 +193,14 @@ These slides will be updated in the next months.
             
 <br>
 
+
 </div> <!-- content -->
 
+
+</div> <!-- wrapper -->
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
