@@ -1,6 +1,6 @@
 #wrapper{
-    width:800;
-    margin:0 auto;
+/*    width:800;
+    margin:0 auto; */
 }
 
 #header{
@@ -18,27 +18,30 @@
 
 #logo img{ 
    float:left;
-   width: 100px; 
 }
 
-hr{
+/*hr {
     color: #3465a4;
     height:5px;
     background:#3465a4
-}
+}*/
 
 h1 {
     font-size:1.9em;
-	color: #3465a4;
+	color: #bc9f60;
     text-align: center;
 }
 
 h3 {
     font-size:1.5em;
-    color: #3465a4;
+    color: #bc9f60;
 }
 
 #bottom-quote{
     font-style:italic;
     color: #3465a4;
+}
+
+.container {
+ margin-top: 2em;
 }
