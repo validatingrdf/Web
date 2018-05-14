@@ -4,7 +4,7 @@
         "schemaURL": "https://raw.githubusercontent.com/SuLab/Genewiki-ShEx/master/genes/wikidata-human-genes.shex",
         "dataLabel": "Get 2 gene Items from Wikidata" ,
         "data": "Endpoint: https://query.wikidata.org/sparql",
-        "queryMap": "SPARQL '''PREFIX wdt: <http://www.wikidata.org/prop/direct/>\n\nSELECT ?item WHERE { ?item wdt:P351 ?geneid ; wdt:P703 wd:Q15978631 .} LIMIT 2'''@START",
+        "queryMap": "SPARQL '''PREFIX wdt: <http://www.wikidata.org/prop/direct/>\nprefix wd: <http://www.wikidata.org/entity/>\n\nSELECT ?item WHERE { ?item wdt:P351 ?geneid ; wdt:P703 wd:Q15978631 .} LIMIT 2'''@START",
         "status": "conformant"
     },
     {
