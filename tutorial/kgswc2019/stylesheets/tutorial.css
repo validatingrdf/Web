@@ -1,0 +1,47 @@
+#wrapper{
+/*    width:800;
+    margin:0 auto; */
+}
+
+#header{
+    position: relative;
+    height: 75px;
+    margin-top:35px;
+}
+
+
+
+#title{
+    margin:center;
+    color:#712323;
+}
+
+#logo img{ 
+   float:left;
+}
+
+/*hr {
+    color: #3465a4;
+    height:5px;
+    background:#3465a4
+}*/
+
+h1 {
+    font-size:1.9em;
+	color: #712323;
+    text-align: center;
+}
+
+h3 {
+    font-size:1.5em;
+    color: #712323;
+}
+
+#bottom-quote{
+    font-style:italic;
+    color: #3465a4;
+}
+
+.container {
+ margin-top: 2em;
+}
