@@ -9,7 +9,9 @@
     margin-top:35px;
 }
 
-
+.navbar {
+    background-color: aliceblue;
+}
 
 #title{
     margin:center;
@@ -44,4 +46,8 @@ h3 {
 
 .container {
  margin-top: 2em;
+}
+
+body {
+    padding-top: 70px;
 }

@@ -15,21 +15,37 @@
 <div id="wrapper">
  
  <header>
- <nav>
+ <nav class="navbar navbar-toggleable-md fixed-top navbar-inverse bg-inverse">
   <div id="logo">
     <a href="http://iswc2020.semanticweb.org/" title="ISWC'20">
       <img src="images/ISWC2020_logo.png" alt="ISWC 2020 logo" class="img-fluid" width="10%" />
     </a>
   </div>
  <h1>Shapes applications and tools - ISWC'20 Tutorial</h1>
+ <ul class="nav">
+  <li class="nav-item">
+    <a class="nav-link" href="#abstract">abstract</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#slides">slides</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#topics">topics</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#schedule">Registration & schedule</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#team">team</a>
+  </li>
+ </ul>
  </nav>
 </header>
 
 
 <div class="container">
 
-
-
+<section id="abstract">
 <h3>Abstract</h3>
 <p>Two technologies have been proposed for RDF validation based on the notion of shape: 
 Shape Expressions (ShEx) and 
@@ -43,7 +59,9 @@ In this tutorial we will present both ShEx and SHACL using examples,
 discuss the rationales for their design and compare them. </p>
 
 <p>We will also present some tools that are being developed around shapes, as well as some applications like the wikidata entity schema namespace which allows to create an ecosystem of shape expressions to validate wikidata entities.</p>
+</section>
 
+<section id="slides">
 <h3>Slides</h3>
 <ul>
 <li>Introduction and motivation (<a href="https://figshare.com/articles/presentation/ISWC_2020_Tutorial_Shapes_applications_and_tools_Introduction_and_motivation/13174592">figshare</a>)</li>
@@ -53,9 +71,11 @@ discuss the rationales for their design and compare them. </p>
 <li>ShEx and SHACL compared (<a href="https://figshare.com/articles/presentation/ShEx_and_SHACL_compared/13174583">figshare</a>)</li>
 <li>Shapes applications and tools (<a href="https://figshare.com/articles/presentation/Shapes_applications_and_tools/13174586">figshare</a>)</li>
 </ul>
+</section>
 
-  
-<h3>Overview</h3>
+
+<section id="overview">
+<h3 id="overview">Overview</h3>
 <p>RDF data can be considered the <em>llingua franca</em> of the semantic web. 
 It possess a number of indisputable benefits like flexibility, easy integration and openness. 
 It forms a core layer for knowledge representation in the semantic web stack and 
@@ -83,7 +103,9 @@ Participants will be able to play with validation tools using web-based interfac
 <a href="http://wikishape.weso.es">WikiShape</a> or 
 <a href="https://rawgit.com/shexSpec/shex.js/master/doc/shex-simple.html">ShEx Simple online validator</a>} to validate their RDF data. 
 </p>
+</section>
 
+<section id="topics">
 <h3>Topics</h3>
 <ul>
 <li>RDF Data Model
@@ -110,7 +132,9 @@ Participants will be able to play with validation tools using web-based interfac
   </ul>  
 <li>Challenges and perspectives</li>
 </ul>
+</section>
 
+<section id="goals">
 <h3>Goals</h3>
 <ul>
 <li> Users will understand use cases for data shapes.
@@ -121,13 +145,15 @@ Participants will be able to play with validation tools using web-based interfac
 <li> Users will be able to assess and compare the differences between ShEx and SHACL
 <li> Users will be able to validate and create entity schemas on Wikidata.
 </ul>
+</section>
 
-<h3>Audience</h3>
+<h3 id="audience">Audience</h3>
 
 <p>Anyone interested in Semantic Web technologies and tools is expected to attend this tutorial. 
 Some rudimentary knowledge of RDF and Turtle is expected, although a short introduction to the RDF data model will be done.
 </p>
 
+<section id="team">
 <h3>Tutoring team</h3>
 <ul>
 <li><a href="http://labra.weso.es">Jose Emilio Labra Gayo</a>.
@@ -140,25 +166,29 @@ Some rudimentary knowledge of RDF and Turtle is expected, although a short intro
   He implemented the SHACL and ShEx library <a href="http://www.weso.es/shaclex/">SHaclEX</a> 
   and maintains the online RDF validator services <a href="http://rdfshape.weso.es/">RDFShape</a> 
   and <a href="http://wikishape.weso.es/">WikiShape</a>. 
-  
 </ul>
+</section>
 
-<h3>Registration</h3>
+<section id="schedule">
+<h3>Registration and schedule</h3>
 
 <p>To register, visit: <a href="https://iswc2020.semanticweb.org/attending/registration//">ISWC'20 registration</a>
-
-<h3>Schedule</h3>
 
 <p>The tutorial will start at 10:00h CET time and will end at 13:00h CET time on Monday, 2nd November 2020 (see 
    <a href="https://iswc2020.semanticweb.org/program/">Program</a>).
 </p>
 <p>Attendees can use <a href="https://teams.microsoft.com/l/meetup-join/19%3aa36b1a3276384146abc4091070a12856%40thread.tacv2/1603747828531?context=%7b%22Tid%22%3a%2205ea74a3-92c5-4c31-978a-925c3c799cd0%22%2c%22Oid%22%3a%22abfbeefb-af8c-43ae-a524-1f2829864a88%22%7d">the following link</a> to attend the tutorial.</p>
+</p>
+</section>
 
+<section id="examples">
 <h3>Examples</h3>
 
 <p>Examples and other material will be available at 
  <a href="https://github.com/validatingrdf/Tutorial">this repository</a></p>
             
+</section>
+
 <br>
 
 
