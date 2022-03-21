@@ -1,0 +1,10 @@
+prefix :       <http://example.org/>
+prefix xsd:    <http://www.w3.org/2001/XMLSchema#>
+prefix schema: <http://schema.org/>
+
+:Person {
+  ( schema:name  xsd:string | 
+    schema:firstName xsd:string + ; schema:lastName xsd:string
+  ) ;  
+  schema:knows @:Person *
+}

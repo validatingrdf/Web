@@ -1,0 +1,7 @@
+prefix :       <http://example.org/>
+prefix xsd:    <http://www.w3.org/2001/XMLSchema#>
+
+:Book IRI {
+  :title  xsd:string ;
+  :author IRI + 
+}
