@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Shower Presentation Engine</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="shower/themes/ribbon/styles/styles.css">
+    <style>
+        .shower {
+            --slide-ratio: calc(16 / 9);
+        }
+    </style>
+</head>
+<body class="shower list">
+
+    <header class="caption">
+        <h1>Describe and Validate Your RDF Data with Data Shapes</h1>
+        <p><a href="http://labra.weso.es">Jose Emilio Labra Gayo</a>, <a href="https://www.w3.org/People/Eric/">Eric Prud'hommeaux</a></p>
+    </header>
+
+    <section class="slide">
+        <h2>Describe and Validate RDF Data with Data Shapes</h2>
+        <div class="columns two">
+            <ul>
+              <li><a href="http://labra.weso.es">Jose Emilio Labra Gayo</a></li>
+              <li><a href="http://www.weso.es">WESO Group, University of Oviedo</a></li>
+            </ul>    
+            <ul>
+                <li><a href="https://www.w3.org/People/Eric/">Eric Prud'hommeaux</a></li>
+                <li><a href="https://www.janeirodigital.com/">Janeiro Digital</a>, USA</li>
+            </ul>    
+        </div>
+        <p><a href="http://www.lotico.com/index.php/Data_Shapes">LOTICO talk</a>, March 2022</p>
+        
+        <!-- Create your first slide -->
+    </section>
+
+    <section class="slide">
+        <h2>RDF</h2>
+ <div class="columns two">
+ <div>
+                <!-- 
+prefix :      <http://example.org/>
+prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#>
+prefix xsd:   <http://www.w3.org/2001/XMLSchema#>
+prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+:weavingWeb rdf:type :Book ;
+            :title  "Weaving the Web" ;
+            :code   "isbn10:0-06-251587-X" ;
+            :code   "isbn13:978-0-06-251587-2" ;
+            :author :timbl .
+:timbl  rdf:type    :Human ;
+        :birthPlace :london ;
+        rdfs:label  "Tim Berners-Lee" ;
+        :birthDate  "1955-06-08"^^xsd:date ;
+        :knows      _:1   .
+:london rdf:type :City, :Metropolis ;
+        :country :UK .
+_:1     :birthPlace :Spain .
+                -->
+<pre>
+<meta http-equiv="content-type" content="text/html; charset=utf-8"><div style="color: #000000;background-color: #ffffff;font-family: 'Droid Sans Mono', 'monospace', monospace;font-weight: normal;font-size: 12px;line-height: 16px;white-space: pre;"><div><span style="color: #000000;">prefix </span><span style="color: #0000ff;">:</span><span style="color: #000000;">      &lt;http://example.org/&gt;</span></div><div><span style="color: #000000;">prefix </span><span style="color: #0000ff;">rdfs:</span><span style="color: #000000;">  &lt;http://www.w3.org/2000/01/rdf-schema#&gt;</span></div><div><span style="color: #000000;">prefix </span><span style="color: #0000ff;">xsd:</span><span style="color: #000000;">   &lt;http://www.w3.org/2001/XMLSchema#&gt;</span></div><div><span style="color: #000000;">prefix </span><span style="color: #0000ff;">rdf:</span><span style="color: #000000;">   &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;</span></div><br><div><span style="color: #0000ff;">:</span><span style="color: #000000;">weavingWeb </span><span style="color: #0000ff;">rdf:</span><span style="color: #000000;">type </span><span style="color: #0000ff;">:</span><span style="color: #000000;">Book ;</span></div><div><span style="color: #000000;">            </span><span style="color: #0000ff;">:</span><span style="color: #000000;">title  </span><span style="color: #a31515;">"Weaving the Web"</span><span style="color: #000000;"> ;</span></div><div><span style="color: #000000;">            </span><span style="color: #0000ff;">:</span><span style="color: #000000;">code   </span><span style="color: #a31515;">"isbn10:0-06-251587-X"</span><span style="color: #000000;"> ;</span></div><div><span style="color: #000000;">            </span><span style="color: #0000ff;">:</span><span style="color: #000000;">code   </span><span style="color: #a31515;">"isbn13:978-0-06-251587-2"</span><span style="color: #000000;"> ;</span></div><div><span style="color: #000000;">            </span><span style="color: #0000ff;">:</span><span style="color: #000000;">author </span><span style="color: #0000ff;">:</span><span style="color: #000000;">timbl .</span></div><div><span style="color: #0000ff;">:</span><span style="color: #000000;">timbl  </span><span style="color: #0000ff;">rdf:</span><span style="color: #000000;">type    </span><span style="color: #0000ff;">:</span><span style="color: #000000;">Human ;</span></div><div><span style="color: #000000;">        </span><span style="color: #0000ff;">:</span><span style="color: #000000;">birthPlace </span><span style="color: #0000ff;">:</span><span style="color: #000000;">london ;</span></div><div><span style="color: #000000;">        </span><span style="color: #0000ff;">rdfs:</span><span style="color: #000000;">label  </span><span style="color: #a31515;">"Tim Berners-Lee"</span><span style="color: #000000;"> ;</span></div><div><span style="color: #000000;">        </span><span style="color: #0000ff;">:</span><span style="color: #000000;">birthDate  </span><span style="color: #a31515;">"1955-06-08"</span><span style="color: #000000;">^^</span><span style="color: #0000ff;">xsd:</span><span style="color: #000000;">date ;</span></div><div><span style="color: #000000;">        </span><span style="color: #0000ff;">:</span><span style="color: #000000;">knows      </span><span style="color: #0000ff;">_:</span><span style="color: #000000;">1   .</span></div><div><span style="color: #0000ff;">:</span><span style="color: #000000;">london </span><span style="color: #0000ff;">rdf:</span><span style="color: #000000;">type </span><span style="color: #0000ff;">:</span><span style="color: #000000;">City, </span><span style="color: #0000ff;">:</span><span style="color: #000000;">Metropolis ;</span></div><div><span style="color: #000000;">        </span><span style="color: #0000ff;">:</span><span style="color: #000000;">country </span><span style="color: #0000ff;">:</span><span style="color: #000000;">UK .</span></div><div><span style="color: #0000ff;">_:</span><span style="color: #000000;">1     </span><span style="color: #0000ff;">:</span><span style="color: #000000;">birthPlace </span><span style="color: #0000ff;">:</span><span style="color: #000000;">Spain .</span></div></div>
+</pre>                
+</div>
+<div>
+ <object data="pictures/weavingWeb.svg" 
+    type="image/svg+xml" 
+    width="130%"></object>
+</div>
+        </div>
+    </section>
+
+    <section class="slide">
+        <h2>ShEx example</h2>
+        <pre>
+            <!--
+prefix :      <http://example.org/>
+prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#>
+prefix xsd:   <http://www.w3.org/2001/XMLSchema#>
+prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+<Book> {
+    :title     xsd:string ;
+    :author    @<Person> + ;
+    :related   @<Book>
+}
+<Person> {
+    :name      xsd:string
+}
+            -->
+            <meta http-equiv="content-type" content="text/html; charset=utf-8"><div style="color: #000000;background-color: #ffffff;font-family: 'Droid Sans Mono', 'monospace', monospace;font-weight: normal;font-size: 12px;line-height: 16px;white-space: pre;"><div><span style="color: #0000ff;">prefix</span><span style="color: #000000;"> </span><span style="color: #0000ff;">:</span><span style="color: #000000;">      &lt;http://example.org/&gt;</span></div><div><span style="color: #0000ff;">prefix</span><span style="color: #000000;"> </span><span style="color: #0000ff;">rdfs:</span><span style="color: #000000;">  &lt;http://www.w3.org/2000/01/rdf-schema#&gt;</span></div><div><span style="color: #0000ff;">prefix</span><span style="color: #000000;"> </span><span style="color: #0000ff;">xsd:</span><span style="color: #000000;">   &lt;http://www.w3.org/2001/XMLSchema#&gt;</span></div><div><span style="color: #0000ff;">prefix</span><span style="color: #000000;"> </span><span style="color: #0000ff;">rdf:</span><span style="color: #000000;">   &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;</span></div><br><div><span style="color: #000000;">&lt;Book&gt; {</span></div><div><span style="color: #000000;">    </span><span style="color: #0000ff;">:</span><span style="color: #000000;">title     </span><span style="color: #0000ff;">xsd:</span><span style="color: #000000;">string ;</span></div><div><span style="color: #000000;">    </span><span style="color: #0000ff;">:</span><span style="color: #000000;">author    @&lt;Person&gt; + ;</span></div><div><span style="color: #000000;">    </span><span style="color: #0000ff;">:</span><span style="color: #000000;">related   @&lt;Book&gt;</span></div><div><span style="color: #000000;">}</span></div><div><span style="color: #000000;">&lt;Person&gt; {</span></div><div><span style="color: #000000;">    </span><span style="color: #0000ff;">:</span><span style="color: #000000;">name      </span><span style="color: #0000ff;">xsd:</span><span style="color: #000000;">string</span></div><div><span style="color: #000000;">}</span></div></div>
+        </pre>
+    </section>
+
+<!--    <footer class="badge">
+        <a href="https://github.com/shower/shower">Fork me on GitHub</a>
+    </footer> -->
+
+    <div class="progress"></div>
+
+    <script src="shower/shower.js"></script>
+    <!-- Copyright © 2022 Yours Truly, Famous Inc. -->
+
+</body>
+</html>
