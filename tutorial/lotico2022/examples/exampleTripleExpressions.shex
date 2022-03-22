@@ -1,10 +1,12 @@
 prefix :       <http://example.org/>
 prefix xsd:    <http://www.w3.org/2001/XMLSchema#>
 prefix schema: <http://schema.org/>
+prefix foaf:   <http://xmlns.com/foaf/0.1/>
+
 
 :Person {
   ( schema:name  xsd:string | 
     schema:firstName xsd:string + ; schema:lastName xsd:string
   ) ;  
-  schema:knows @:Person *
+  ( schema:email IRI | foaf:mbox IRI ) + ;
 }

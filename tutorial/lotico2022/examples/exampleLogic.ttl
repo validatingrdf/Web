@@ -1,0 +1,12 @@
+prefix :       <http://example.org/>
+prefix xsd:    <http://www.w3.org/2001/XMLSchema#>
+prefix schema: <http://schema.org/>
+
+:item23 schema:isbn    "isbn:006251587X"               ;
+  schema:name          "Weaving the Web"               ;
+  schema:numberOfPages 272                             ;  
+  schema:genre         :NonFiction                     ;  
+  schema:author        :timbl                          ;
+  schema:publisher     <http://www.harpercollins.com/> ;
+  schema:audio         <http://audio.com/item23>       ;
+  schema:maintainer    :alice                          .

@@ -1,0 +1,9 @@
+prefix :       <http://example.org/>
+prefix xsd:    <http://www.w3.org/2001/XMLSchema#>
+prefix schema: <http://schema.org/>
+
+:item23 
+  schema:name          "Weaving the Web"               ;
+  schema:numberOfPages 272                             ;  
+  schema:author        :timbl, :markFischetti          ;
+  schema:maintainer    :alice                          .

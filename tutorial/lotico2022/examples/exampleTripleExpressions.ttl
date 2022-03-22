@@ -1,9 +1,13 @@
 prefix :       <http://example.org/>
 prefix xsd:    <http://www.w3.org/2001/XMLSchema#>
 prefix schema: <http://schema.org/>
+prefix foaf:   <http://xmlns.com/foaf/0.1/>
 
-:alice schema:name      "Alice Cooper" .
-:bob   schema:firstName "Robert" ;
-       schema:lastName  "Smith"   .
-:carol schema:firstName "Carole" ;
-       schema:name      "Carole King"   .       
+:alice schema:name      "Alice Cooper"       ;
+       schema:email     <mailto:alice@e.com> .
+:bob   schema:firstName "Robert"             ;
+       schema:lastName  "Smith"              ;
+       foaf:mbox        <mailto:bob@e.com>   .
+:carol schema:firstName "Carole"             ;
+       schema:name      "Carole King"        ;
+       schema:email     <mailto:carol@e.com> .       
