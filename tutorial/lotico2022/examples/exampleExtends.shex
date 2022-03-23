@@ -1,29 +1,24 @@
 prefix :       <http://example.org/>
 prefix xsd:    <http://www.w3.org/2001/XMLSchema#>
-prefix schema: <http://schema.org/>
 
 :Book {
-  schema:name       xsd:string ; 
-  schema:author     @:Person   ;
-  :code             @:ISBN13   ;
-  :code             @:ISBN10   
+  :name       xsd:string         ; 
+  :author     @:Person   +       ;
+  :code       /isbn:[0-9]{13}/   ;
+  :code       /isbn:[0-9X]{10}/   
 }
 
 :Person {
-  schema:name       xsd:string ; 
-  schema:birthDate xsd:date 
+  :name      xsd:string ; 
+  :birthDate xsd:date 
 }
 
 :LibraryBook extends @:Book {
-   :code            @:LibraryCode ;
-   :archivedBy      @:Librarian +
+   :code        /internal:[0-9]*/ ;
+   :archivedBy  @:Librarian +
 }
 
 :Librarian extends @:Person {
-    :code        /librarian:[0-9]+/
+  :code        /lib:[0-9]+/
 }
 
-
-:ISBN13      /isbn:[0-9]{13}/
-:ISBN10      /isbn:[0-9]{10}/
-:LibraryCode /internal:[0-9]*/

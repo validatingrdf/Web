@@ -1,2 +1,3 @@
-:item23@:LibraryBook
-# :alice@:Librarian
+:item23@:Book,
+:alice@:Librarian,
+:timbl@:Person

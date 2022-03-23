@@ -1,17 +1,16 @@
 prefix :       <http://example.org/>
 prefix xsd:    <http://www.w3.org/2001/XMLSchema#>
-prefix schema: <http://schema.org/>
 
-:item23 schema:name     "Weaving the Web"    ;
-        schema:author   :timbl               ;
-        :code           "isbn:006251587X"    ;
-        :code           "isbn:9780062515872" ;
-        :code           "internal:234"       ;
-        :archivedBy     :alice               .
+:item23 :name       "Weaving the Web"    ;
+        :author     :timbl               ;
+        :code       "isbn:006251587X"    ;
+        :code       "isbn:9780062515872" ;
+        :code       "internal:234"       ;
+        :archivedBy :alice               .
         
-:timbl schema:name      "Tim Berners Lee"      ;
-       schema:birthDate "1955-06-08"^^xsd:date .
+:timbl :name      "Tim Berners Lee"      ;
+       :birthDate "1955-06-08"^^xsd:date .
 
-:alice schema:name      "Alice Cooper"         ;
-       schema:birthDate "1990-01-02"^^xsd:date ;
-       :code            "librarian:42" .
+:alice :name      "Alice Cooper"         ;
+       :birthDate "1990-01-02"^^xsd:date ;
+       :code      "lib:42" .

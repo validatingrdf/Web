@@ -1,0 +1,12 @@
+[
+  {
+    "title": "Shape Forms",
+    "desc": "ShapeForms example",
+    "schemaURL": "user.shex",
+    "schemaFormat": "ShExC",
+    "layoutURL": "empty.ttl",
+    "dataURL": "user.ttl",
+    "node": "http://example.org/alice",
+    "shape": "http://example.org/User"
+  }
+]

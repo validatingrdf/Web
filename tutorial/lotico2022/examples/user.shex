@@ -1,0 +1,12 @@
+prefix schema: <http://schema.org/>
+prefix : <http://example.org/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#> 
+prefix ui: <http://www.w3.org/ns/ui#>
+
+start = @:User
+
+:User {
+ schema:name  xsd:string                     // ui:label "name" ;
+ schema:birthDate xsd:dateTime               // ui:label "Birth date" ;
+ schema:gender [ schema:Male schema:Female ] // ui:label "Gender" ;
+}

@@ -1,0 +1,16 @@
+prefix :       <http://example.org/>
+prefix xsd:    <http://www.w3.org/2001/XMLSchema#>
+prefix schema: <http://schema.org/>
+
+:item24 schema:isbn    "isbn:006251587X"               ;
+  schema:name          "Weaving the Web"               ;
+  schema:genre         :NonFiction                     ;  
+  schema:author        :timbl                          ;
+  schema:readBy        :timbl                          .
+  
+:item23 schema:isbn    "isbn:006251587X"               ;
+  schema:name          "Weaving the Web"               ;
+  schema:genre         :NonFiction                     ;  
+  schema:author        :timbl                          ;
+  schema:numberOfPages 272                             ;
+  schema:readBy        :timbl                          .  
