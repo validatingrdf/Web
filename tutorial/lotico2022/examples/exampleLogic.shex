@@ -2,14 +2,16 @@ prefix :       <http://example.org/>
 prefix xsd:    <http://www.w3.org/2001/XMLSchema#>
 prefix schema: <http://schema.org/>
 
-:AudioBook {
-  schema:name          xsd:string                      ;
-  schema:author        @:Person                        ;
-  schema:publisher     IRI                             ;
-  schema:audio         .                               ;
-  schema:maintainer    @:Person OR @:Organization
-} AND {
-
+:Book {
+  schema:name   xsd:string ;
+  schema:author @:Person OR @:Organization ;
 }
+:AudioBook @:Book AND {
+  schema:name          MaxLength 20 ;
+  schema:readBy        @:Person     ;
+} AND NOT {
+  schema:numberOfPages . +
+}
+
 :Person {}
-:Organization {}
+:Organization {} 
