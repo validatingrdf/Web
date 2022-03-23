@@ -3,6 +3,6 @@ prefix : <http://example.org/>
 prefix xsd: <http://www.w3.org/2001/XMLSchema#> 
 prefix ui: <http://www.w3.org/ns/ui#>
 
-alice schema:name  "Alice" ;
+:alice schema:name  "Alice" ;
       schema:birthDate "2002-05-30T09:00:00"^^xsd:dateTime ; 
       schema:gender schema:Female .
