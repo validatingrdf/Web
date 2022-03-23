@@ -1,0 +1,13 @@
+PREFIX ui: <http://www.w3.org/ns/ui#>
+PREFIX : <http://janeirodigital.com/layout#>
+PREFIX wd: <https://doku.wikibase.wiki/entity/> 
+PREFIX wdt: <https://doku.wikibase.wiki/prop/direct/> 
+
+[ a :Layout ; :annotation 
+  [ :path "@<http://example.org/User>" ;
+    ui:label "User" 
+  ],
+  [ :path "@<http://example.org/User>/<name>" ;
+    ui:label "Name" 
+  ]
+] .
