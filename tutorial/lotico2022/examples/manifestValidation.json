@@ -1,10 +1,10 @@
 [
   {
     "schemaLabel": "cardinalities",
-    "schemaURL": "user.shex",
+    "schemaURL": "exampleCardinalities.shex",
     "schemaFormat": "ShExC",
     "dataLabel": "item23",
-    "dataURL": "user.ttl",
+    "dataURL": "exampleCardinalities.ttl",
     "queryMap": ":item23@:Book"
   }
 ]
