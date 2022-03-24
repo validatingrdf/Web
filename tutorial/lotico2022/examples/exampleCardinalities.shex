@@ -1,14 +1,13 @@
 prefix :       <http://example.org/>
 prefix xsd:    <http://www.w3.org/2001/XMLSchema#>
-prefix schema: <http://schema.org/>
 
 :Book {
-  schema:name          xsd:string                      ;
-  schema:numberOfPages xsd:integer                     ;
-  schema:author        @:Person                   +    ;
-  schema:publisher     IRI                        ?    ;
-  schema:maintainer    @:Person OR @:Organization {1,3} ;
-  :related             @:Book                     *
+  :name          xsd:string                      ;
+  :numberOfPages xsd:integer                     ;
+  :author        @:Person                   +    ;
+  :publisher     IRI                        ?    ;
+  :maintainer    @:Person OR @:Organization {1,3} ;
+  :related       @:Book                     *
 }
 :Person {}
 :Organization {}

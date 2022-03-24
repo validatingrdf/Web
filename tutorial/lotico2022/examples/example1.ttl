@@ -3,17 +3,16 @@ prefix xsd:    <http://www.w3.org/2001/XMLSchema#>
 prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 prefix schema: <http://schema.org/>
 
-:item23 schema:title   "Weaving the web" ;
-        schema:author  :timbl            ;
-        schema:related :item24, :item25  .
-:item24 schema:title   "Validating RDF data" .
-:timbl  rdf:type :Human ;
-        schema:name       "Tim Berners-Lee" ;
-        schema:birthDate  "1955-06-08"^^xsd:date ;
-        schema:knows      _:1   .
-:london rdf:type :City, :Metropolis ;
-_:1     schema:birthPlace :Spain .
-:item24 schema:title   "Validating RDF data" .
-:item25 schema:title   "Learning SPARQL" .
+:Book {
+  :title   xsd:string ;
+  :author  @:Person   ;
+  :related @:Book     ;
+}
+
+:Person {
+        :name       xsd:string ;
+        :birthDate  xsd:date   ;
+        :knows      @:Person 
+}
 
 

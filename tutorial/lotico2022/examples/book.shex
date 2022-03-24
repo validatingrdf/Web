@@ -1,0 +1,28 @@
+prefix :       <http://example.org/>
+prefix xsd:    <http://www.w3.org/2001/XMLSchema#>
+prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix schema: <http://schema.org/>
+
+:Book {
+  :title   xsd:string   ;
+  :author  @:Person   * ;
+  :related @:Book     * ;
+}
+
+:Person {
+  :name       xsd:string ? ;
+  :birthDate  xsd:date   ? ;
+  :birthPlace @:Place    ? ;
+  :knows      @:Person   * ;
+}
+
+:Place {
+  :name       xsd:string ;
+  :country    @:Country  ;  
+}
+
+:Country {
+  :name       xsd:string 
+}
+
+

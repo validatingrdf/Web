@@ -8,15 +8,5 @@
     "dataURL": "user.ttl",
     "node": "http://example.org/alice",
     "shape": "http://example.org/User"
-  }, 
-  {
-    "title": "Cardinalities",
-    "desc": "Cardinalities example",
-    "schemaURL": "exampleCardinalities.shex",
-    "schemaFormat": "ShExC",
-    "layoutURL": "empty.ttl",
-    "dataURL": "exampleCardinalities.ttl",
-    "node": "http://example.org/item23",
-    "shape": "http://example.org/Book"
   }
 ]

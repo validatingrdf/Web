@@ -1,0 +1,19 @@
+prefix :       <http://example.org/>
+prefix xsd:    <http://www.w3.org/2001/XMLSchema#>
+prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix schema: <http://schema.org/>
+
+:item23 :title   "Weaving the web" ;
+        :author  :timbl            ;
+        :related :item24, :item25  .
+:item24 :title   "Validating RDF data" .
+:timbl  rdf:type :Human ;
+        :name       "Tim Berners-Lee" ;
+        :birthDate  "1955-06-08"^^xsd:date ;
+        :knows      _:1   .
+:london rdf:type :City, :Metropolis .
+_:1     :birthPlace :Spain .
+:item24 :title   "Validating RDF data" .
+:item25 :title   "Learning SPARQL" .
+
+
