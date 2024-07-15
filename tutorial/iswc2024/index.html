@@ -71,9 +71,10 @@
           applications like inferring shapes from existing data and creating conforming subsets of Knowledge Graphs.</p>
       </section>
 
-      <!--      <section id="slides">
-        <h3>Slides and video recordings</h3>
-        <ul>
+      <section id="slides">
+        <h3>Slides</h3>
+        <p>TBD</p>
+        <!--        <ul>
           <li>Introduction and motivation
             (<a
               href="https://figshare.com/articles/presentation/ISWC_2020_Tutorial_Shapes_applications_and_tools_Introduction_and_motivation/13174592">presentation</a>)
@@ -98,13 +99,13 @@
               href="https://figshare.com/articles/presentation/Shapes_applications_and_tools/13174586">presentation</a>)
             (<a href="https://youtu.be/eWI2D5qZrTg">video</a>)
           </li>
-        </ul>
+        </ul> -->
       </section>
 
 
       <section id="overview">
         <h3 id="overview">Overview</h3>
-        <p>RDF data can be considered the <em>llingua franca</em> of the semantic web.
+        <!--       <p>RDF data can be considered the <em>llingua franca</em> of the semantic web.
           It possess a number of indisputable benefits like flexibility, easy integration and openness.
           It forms a core layer for knowledge representation in the semantic web stack and
           the availability of RDF data stores and SPARQL makes it a right choice for practical applications.
@@ -139,55 +140,67 @@
           <a href="http://wikishape.weso.es">WikiShape</a> or
           <a href="https://rawgit.com/shexSpec/shex.js/master/doc/shex-simple.html">ShEx Simple online validator</a>} to
           validate their RDF data.
-        </p>
+        </p> -->
       </section>
 
       <section id="topics">
         <h3>Topics</h3>
+        <p>We are planning for a half-day tutorial with the following topics:</p>
         <ul>
-          <li>RDF Data Model
-          <li>Shape Expressions
-            <ul>
-              <li>Shapes and basic triple constraints
-              <li>Groupings and cardinality
-              <li>References and logical operators
-              <li>Shape maps
-              <li>Semantic actions
-            </ul>
-          <li>SHACL
-            <ul>
-              <li>Shapes
-              <li>Target declarations
-              <li>Constraints: property constraints, property pair constraints, constraint operators: Or, And and Not
-              <li>Other features: SPARQL based constraints and templates
-            </ul>
-          <li>Comparing ShEx and SHACL
-          <li>Applications and tools
-            <ul>
-              <li>Data portals</li>
-              <li>Wikidata and Wikibase</li>
-            </ul>
-          <li>Challenges and perspectives</li>
+          <li>Introduction to Knowledge graphs</li>
+          <li>Technologies for Knowledge Graphs: RDF, Property Graphs, Wikidata and Wikibase, RDF-Star (RDF 1.2)</li>
+          <li>Validating RDF: ShEx, SHACL, Comparison between ShEx and SHACL</li>
+          <li>Validating Property Graphs: PGSchema, GQL, PShEx, ProGS</li>
+          <li>Validating Wikibase and Wikidata graphs: Entity Schemas, Wikidata Property Constraints, WShEx</li>
+          <li>Proposal for extending ShEx and SHACL for RDF-Star</li>
+          <li>Applications: Inferring shapes from data, Knowledge Graphs Subsets, etc.</li>
         </ul>
+
+        <p>We plan to devote the first slot to the first 3 items (knowledge graphs as well as Validating RDF
+          technologies, ShEx and SHACL) which are more introductory,
+          and the second slot for the rest of the items, which are more specialised.
+        </p>
       </section>
-    -->
-      <!--      <section id="goals">
+
+      <section id="goals">
         <h3>Goals</h3>
         <ul>
-          <li> Users will understand use cases for data shapes.
-          <li> Users will be able to create their own RDF data shapes or schemas and validate instance data against
-            them.
-          <li> They will see how RDF validation works in ShEx and SHACL.
-          <li> Users will understand some advanced validation scenarios like cyclic data models, negations or recursion
-            as well as more complex definitions.
-          <li> Hands-on experience will leave users comfortable using existing tools to solve practical needs in
-            communicating schemas and verifying instance data conformance.
-          <li> Users will be able to assess and compare the differences between ShEx and SHACL
-          <li> Users will be able to validate and create entity schemas on Wikidata.
+          <li>Attendees will understand the different types of technologies to implement Knowledge Graphs</li>
+          <li>Users will understand the differences between the data models of RDF, Property graphs, Wikibase and
+            RDF-Star.</li>
+          <li>Participants will understand use cases for defining shapes and validating Knowledge Graphs.</li>
+          <li>Participants will be able to create their own RDF data shapes or Schemas and validate instance data
+            against them using ShEx and SHACL.</li>
+          <li>They will see how RDF validation works in ShEx and SHACL.</li>
+          <li>Hands-on experience will leave users comfortable using existing tools to solve practical needs in
+            communicating
+            schemas and verifying instance data conformance.</li>
+          <li>Users will be able to assess and compare the differences between ShEx, SHACL and other validation
+            approachs for property graphs and Wikibase.</li>
         </ul>
       </section>
 
-      <h3 id="audience">Audience</h3>
+      <h3 id="audience">Tutorial type and intended audience</h3>
+      <ul>
+        <li>Target audience: Anyone interested in Knolwedge Graphs and data quality.</li>
+        <li>Tutorial type: We consider that this is a introductory/specialised tutorial as it can serve as an
+          introduction to
+          people that are not aware of the technologies, but we can also offer specialised knowledge about validating
+          property
+          graphs in the second slot.</li>
+        <li>Prior knowledge: Some rudimentary knowledge of RDF and Turtle is expected, although a short introduction to
+          the
+          RDF data model will be done.</li>
+        <li>Tutorial type: We propose a half day tutorial, although we could extend the length if necessary.</li>
+        <li>Materials: We will create a github repository containing the running examples that can be executed online
+          using
+          the following tools: <a href="http://rdfshape.weso.es/">RDFShape</a>,
+          <a href="http://rdfshape.weso.es/">Wikishape</a>,
+          <a href="https://rawgit.com/shexSpec/shex.js/master/doc/shex-simple.html">ShEx Simple Online Tool</a>,
+          <a href="http://shacl.org/playground/">SHACL playground</a>
+          and Jupyter Labs running Python-based libraries.
+        </li>
+      </ul>
 
       <p>Anyone interested in Semantic Web technologies and tools is expected to attend this tutorial.
         Some rudimentary knowledge of RDF and Turtle is expected, although a short introduction to the RDF data model
@@ -198,7 +211,7 @@
         <h3>Tutoring team</h3>
         <ul>
           <li><a href="http://labra.weso.es">Jose Emilio Labra Gayo</a>.
-            Associate Professor, University of Oviedo, Spain.
+            Full Professor at <a href="http://www.uniovi.es">University of Oviedo</a>, Spain.
             Founder and main researcher of <a href="http://www.weso.es">WESO (Web Semantics Oviedo)</a> research group,
             which collaborates with different companies around the world applying semantic web technologies.
             The development of data portals for several companies and public administrations led to his interest on RDF
@@ -214,19 +227,20 @@
       <section id="schedule">
         <h3>Registration and schedule</h3>
 
-        <p>To register, visit: <a href="https://iswc2020.semanticweb.org/attending/registration//">ISWC'20
+        <p>To register, visit: <a href="https://iswc2024.semanticweb.org/attending/registration//">ISWC'24
             registration</a>
 
-        <p>The tutorial will start at 10:00h CET time and will end at 13:00h CET time on Monday, 2nd November 2020 (see
+          <!--<p>The tutorial will start at 10:00h CET time and will end at 13:00h CET time on Monday, 2nd November 2020 (see
           <a href="https://iswc2020.semanticweb.org/program/">Program</a>).
-        </p>
+        </p> 
+
         <p>Attendees can use <a
             href="https://teams.microsoft.com/l/meetup-join/19%3aa36b1a3276384146abc4091070a12856%40thread.tacv2/1603747828531?context=%7b%22Tid%22%3a%2205ea74a3-92c5-4c31-978a-925c3c799cd0%22%2c%22Oid%22%3a%22abfbeefb-af8c-43ae-a524-1f2829864a88%22%7d">the
             following link</a> to attend the tutorial.</p>
-        </p>
+        </p>-->
       </section>
 
-      <section id="examples">
+      <!--      <section id="examples">
         <h3>Examples</h3>
 
         <p>Examples and other material will be available at
@@ -236,7 +250,7 @@
       </section>
 
       <br>
-    -->
+      -->
 
     </div> <!-- content -->
 
