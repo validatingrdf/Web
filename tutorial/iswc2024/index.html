@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Shaping Knowledge Graphs - ISWC'20 Tutorial</title>
+  <title>Shaping Knowledge Graphs - ISWC'24 Tutorial</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="stylesheets/tutorial.css">
@@ -150,9 +150,9 @@
           <li>Introduction to Knowledge graphs</li>
           <li>Technologies for Knowledge Graphs: RDF, Property Graphs, Wikidata and Wikibase, RDF-Star (RDF 1.2)</li>
           <li>Validating RDF: ShEx, SHACL, Comparison between ShEx and SHACL</li>
-          <li>Validating Property Graphs: PGSchema, GQL, PShEx, ProGS</li>
           <li>Validating Wikibase and Wikidata graphs: Entity Schemas, Wikidata Property Constraints, WShEx</li>
-          <li>Proposal for extending ShEx and SHACL for RDF-Star</li>
+          <li>Validating Property Graphs: PGSchema, PG-Keys, PShEx, ProGS</li>
+          <li>Extending ShEx and SHACL for RDF-Star</li>
           <li>Applications: Inferring shapes from data, Knowledge Graphs Subsets, etc.</li>
         </ul>
 
@@ -191,18 +191,22 @@
         <li>Prior knowledge: Some rudimentary knowledge of RDF and Turtle is expected, although a short introduction to
           the
           RDF data model will be done.</li>
-        <li>Tutorial type: We propose a half day tutorial, although we could extend the length if necessary.</li>
+        <li>Tutorial type: Half day tutorial (14h to 17:40h, 11th November 2024).</li>
         <li>Materials: We will create a github repository containing the running examples that can be executed online
           using
-          the following tools: <a href="http://rdfshape.weso.es/">RDFShape</a>,
-          <a href="http://rdfshape.weso.es/">Wikishape</a>,
-          <a href="https://rawgit.com/shexSpec/shex.js/master/doc/shex-simple.html">ShEx Simple Online Tool</a>,
-          <a href="http://shacl.org/playground/">SHACL playground</a>
-          and Jupyter Labs running Python-based libraries.
+          the following tools:
+          <ul>
+            <li><a href="http://rdfshape.weso.es/">RDFShape</a></li>
+            <li><a href="http://rdfshape.weso.es/">Wikishape</a></li>
+            <li><a href="https://rawgit.com/shexSpec/shex.js/master/doc/shex-simple.html">ShEx Simple Online Tool</a>
+            </li>
+            <li><a href="http://shacl.org/playground/">SHACL playground</a></li>
+            <li><a href="https://rudof-project.github.io/">rudof</a></li>
+          </ul>
         </li>
       </ul>
 
-      <p>Anyone interested in Semantic Web technologies and tools is expected to attend this tutorial.
+      <p>Anyone interested in Semantic Web technologies and tools can attend this tutorial.
         Some rudimentary knowledge of RDF and Turtle is expected, although a short introduction to the RDF data model
         will be done.
       </p>
@@ -218,9 +222,11 @@
             validation.
             He was a member of the W3C Data Shapes working group and of the W3C community groups:
             Shape Expressions and SHACL.
-            He implemented the SHACL and ShEx library <a href="http://www.weso.es/shaclex/">SHaclEX</a>
-            and maintains the online RDF validator services <a href="http://rdfshape.weso.es/">RDFShape</a>
-            and <a href="http://wikishape.weso.es/">WikiShape</a>.
+            He implemented the SHACL and ShEx library <a href="http://www.weso.es/shaclex/">SHaclEX</a> in Scala,
+            maintains the online RDF validator services <a href="http://rdfshape.weso.es/">RDFShape</a>
+            and <a href="http://wikishape.weso.es/">WikiShape</a>, and is now implementing the <a
+              href="https://rudof-project.github.io/">rudof</a> library in Rust which can also be used to validate RDF
+            with ShEx, SHACL, DCTAP, etc.
         </ul>
       </section>
 
@@ -229,14 +235,12 @@
 
         <p>To register, visit: <a href="https://iswc2024.semanticweb.org/">ISWC'24</a>
 
-          <!--<p>The tutorial will start at 10:00h CET time and will end at 13:00h CET time on Monday, 2nd November 2020 (see
-          <a href="https://iswc2020.semanticweb.org/program/">Program</a>).
-        </p> 
+        <p>The tutorial will start at 14:00h and has two slots: 14h to 15:40h and 16h to 17:40h on Monday, 11th November
+          2024 (see
+          <a
+            href="https://iswc2024.semanticweb.org/event/3715c6fc-e2d7-47eb-8c01-5fe4ac589a52/websitePage:c3e8692f-d01a-4388-a29d-fe2dc785ac99">Program</a>).
+        </p>
 
-        <p>Attendees can use <a
-            href="https://teams.microsoft.com/l/meetup-join/19%3aa36b1a3276384146abc4091070a12856%40thread.tacv2/1603747828531?context=%7b%22Tid%22%3a%2205ea74a3-92c5-4c31-978a-925c3c799cd0%22%2c%22Oid%22%3a%22abfbeefb-af8c-43ae-a524-1f2829864a88%22%7d">the
-            following link</a> to attend the tutorial.</p>
-        </p>-->
       </section>
 
       <!--      <section id="examples">
