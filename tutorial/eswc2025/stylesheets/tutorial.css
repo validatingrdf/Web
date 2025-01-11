@@ -1,25 +1,27 @@
-#wrapper{
-/*    width:800;
+#wrapper {
+    /*    width:800;
     margin:0 auto; */
 }
 
-#header{
+#header {
     position: relative;
     height: 75px;
-    margin-top:35px;
+    margin-top: 35px;
 }
 
 .navbar {
     background-color: aliceblue;
 }
 
-#title{
-    margin:center;
-    color:#3465a4;
+#title {
+    margin: center;
+    color: #3465a4;
 }
 
-#logo img{ 
-   float:left;
+#logo img {
+    float: left;
+    height: 90px;
+    width: auto;
 }
 
 /*hr {
@@ -29,23 +31,23 @@
 }*/
 
 h1 {
-    font-size:1.9em;
-	color: #bc9f60;
+    font-size: 1.9em;
+    color: #3465a4;
     text-align: center;
 }
 
 h3 {
-    font-size:1.5em;
-    color: #bc9f60;
+    font-size: 1.5em;
+    color: #3465a4;
 }
 
-#bottom-quote{
-    font-style:italic;
+#bottom-quote {
+    font-style: italic;
     color: #3465a4;
 }
 
 .container {
- margin-top: 2em;
+    margin-top: 2em;
 }
 
 body {

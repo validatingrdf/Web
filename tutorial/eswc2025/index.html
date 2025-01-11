@@ -25,19 +25,19 @@
         <h1>Shaping Knowledge Graphs - ESWC'25 Tutorial</h1>
         <ul class="nav">
           <li class="nav-item">
-            <a class="nav-link" href="#abstract">abstract</a>
+            <a class="nav-link" href="#abstract">Abstract</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#slides">slides</a>
+            <a class="nav-link" href="#slides">Slides</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#topics">topics</a>
+            <a class="nav-link" href="#topics">Topics</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#schedule">Registration & schedule</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#team">team</a>
+            <a class="nav-link" href="#team">Team</a>
           </li>
         </ul>
       </nav>
@@ -55,25 +55,31 @@
           RDF-based triplestores are canonical in the Semantic Web, while in the graph databases context Labeled
           Property Graphs like Neo4J
           are also considered as another technology for Knowledge Graphs.
-          Wikidata, a popular Knowledge Graph, offers RDF through its SPARQL query service, but its data model aligns
+          <a href="https://www.wikidata.org">Wikidata</a>, a popular Knowledge Graph, offers RDF through its SPARQL
+          query service, but its data model aligns
           closely with
           Property Graphs using qualifiers and references.
-          The recent proposal of RDF-Star (which is expected to become RDF 1.2) can bridge the gap between RDF and
-          Property Graphs
-          by allowing statements about statements.</p>
+          The proposal of RDF-Star which is expected to become <a href="https://www.w3.org/TR/rdf12-concepts/">RDF
+            1.2</a> can bridge the gap between RDF and
+          Property Graphs by allowing statements about statements.
+        </p>
         <p>The quality of data within these graphs is pivotal, often validated against expected data models or shapes to
           enhance
           accuracy.
           We will present some approaches that have been developed to describe and validate RDF like Shape Expressions
-          (ShEx) or
-          Shapes Constraint Language (SHACL).
+          (<a href="http://shex.io/">ShEx</a>) or
+          Shapes Constraint Language (<a href="https://www.w3.org/TR/shacl/">SHACL</a>).
           We will briefly describe them and show some differences.</p>
-        <p>In the case of Property Graphs, PGSchema was proposed, as well as other proposals like PShEx or ProGS, and
+        <p>In the case of Property Graphs, <a href="https://arxiv.org/abs/2108.11377">PGSchema</a> was proposed, as well
+          as other proposals like <a href="https://labra.weso.es/publication/2024_shex_extensions/">PShEx</a> or ProGS,
+          and
           more recently
-          GQL offers a way to define typed graphs.</p>
+          <a href="https://www.iso.org/standard/76120.html">GQL</a> offers a way to define typed graphs.
+        </p>
         <p>Wikidata adopted Entity Schemas, which are based on ShEx as well as its own property constraint system, and
           there is a
-          proposal called WShEx.</p>
+          proposal called <a href="https://www.weso.es/WShEx/">WShEx</a>.</p>
+
         <p>This tutorial will explore different types of Knowledge Graphs and approaches for their validation. We will
           also
           review practical
