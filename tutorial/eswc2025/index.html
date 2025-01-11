@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Shaping Knowledge Graphs - ISWC'24 Tutorial</title>
+  <title>Shaping Knowledge Graphs - ESWC'25 Tutorial</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="stylesheets/tutorial.css">
@@ -18,11 +18,11 @@
     <header>
       <nav class="navbar navbar-toggleable-md fixed-top navbar-inverse bg-inverse">
         <div id="logo">
-          <a href="http://iswc2024.semanticweb.org/" title="ISWC'24">
-            <img src="images/iswc24logo.webp" alt="ISWC 2020 logo" class="img-fluid" />
+          <a href="https://2025.eswc-conferences.org/" title="ISWC'24">
+            <img src="images/2025-logo.jpeg" alt="ESWC 2025 logo" class="img-fluid" />
           </a>
         </div>
-        <h1>Shaping Knowledge Graphs - ISWC'24 Tutorial</h1>
+        <h1>Shaping Knowledge Graphs - ESWC'25 Tutorial</h1>
         <ul class="nav">
           <li class="nav-item">
             <a class="nav-link" href="#abstract">abstract</a>
@@ -48,31 +48,40 @@
 
       <section id="abstract">
         <h3>Abstract</h3>
-        <p>Knowledge Graphs are increasingly being employed to improve data interoperability, search, and
-          recommendation, alongside
-          fostering the adoption of semantic web technologies. The quality of data within these graphs is pivotal, often
-          validated
-          against expected data models or shapes to enhance accuracy. Various technologies implement knowledge graphs;
-          RDF-based
-          triplestores are canonical in the Semantic Web, while in the graph databases context, Property Graphs are also
-          considered for Knowledge Graphs. Wikidata, a popular Knowledge Graph, offers RDF through its SPARQL query
-          service, but
-          its data model aligns closely with Property Graphs using qualifiers and references, and the recent proposal of
-          RDF-Star
-          can bridge the gap between RDF and Property Graphs.</p>
-        <p>Shape Expressions (ShEx) and Shapes Constraint Language (SHACL) were proposed for RDF validation while in the
-          case of
-          Property Graphs, PGSchema was proposed, as well as other proposals like PShEx or ProGS. Wikidata adopted
-          Entity Schemas,
-          which are based on ShEx as well as its own property constraint system, and there is a proposal called WShEx.
-        </p>
-        <p>This tutorial explores different types of Knowledge Graphs and approaches for their validation. We will also
+        <p>Since Google announced the internal use of Knowledge Graphs to improve search and organize information, their
+          use and
+          application has increased impressively.
+        <p>Various technologies have been proposed to implement Knowledge Graphs:
+          RDF-based triplestores are canonical in the Semantic Web, while in the graph databases context Labeled
+          Property Graphs like Neo4J
+          are also considered as another technology for Knowledge Graphs.
+          Wikidata, a popular Knowledge Graph, offers RDF through its SPARQL query service, but its data model aligns
+          closely with
+          Property Graphs using qualifiers and references.
+          The recent proposal of RDF-Star (which is expected to become RDF 1.2) can bridge the gap between RDF and
+          Property Graphs
+          by allowing statements about statements.</p>
+        <p>The quality of data within these graphs is pivotal, often validated against expected data models or shapes to
+          enhance
+          accuracy.
+          We will present some approaches that have been developed to describe and validate RDF like Shape Expressions
+          (ShEx) or
+          Shapes Constraint Language (SHACL).
+          We will briefly describe them and show some differences.</p>
+        <p>In the case of Property Graphs, PGSchema was proposed, as well as other proposals like PShEx or ProGS, and
+          more recently
+          GQL offers a way to define typed graphs.</p>
+        <p>Wikidata adopted Entity Schemas, which are based on ShEx as well as its own property constraint system, and
+          there is a
+          proposal called WShEx.</p>
+        <p>This tutorial will explore different types of Knowledge Graphs and approaches for their validation. We will
+          also
           review practical
           applications like inferring shapes from existing data and creating conforming subsets of Knowledge Graphs.</p>
       </section>
 
       <section id="slides">
-        <h3>Slides</h3>
+        <h3>Slides (work in progress)</h3>
         <ul>
           <li><a href="slides/01_Tutorial_Intro_and_Motivation.pdf">Introduction and motivation</a></li>
           <li><a href="slides/02_ShExPrimer.pdf">Introduction to ShEx</a></li>
@@ -191,14 +200,14 @@
       <section id="schedule">
         <h3>Registration and schedule</h3>
 
-        <p>To register, visit: <a href="https://iswc2024.semanticweb.org/">ISWC'24</a>
+        <p>To register, visit: <a href="https://2025.eswc-conferences.org/">ESWC'25</a>
 
-        <p>The tutorial will start at 9:00h and has two slots: 9:00h to 10:40h and 11:00h to 11:40h on Monday, 11th
+          <!--<p>The tutorial will start at 9:00h and has two slots: 9:00h to 10:40h and 11:00h to 11:40h on Monday, 11th
           November
           2024 (see
           <a
             href="https://iswc2024.semanticweb.org/event/3715c6fc-e2d7-47eb-8c01-5fe4ac589a52/websitePage:c3e8692f-d01a-4388-a29d-fe2dc785ac99">Program</a>).
-        </p>
+        </p>-->
 
       </section>
 
