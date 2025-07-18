@@ -1,0 +1,244 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Shaping Knowledge and Interoperable Graphs - ISWC'25 Tutorial</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="stylesheets/tutorial.css">
+
+</head>
+
+<body>
+
+  <div id="wrapper">
+
+    <header>
+      <nav class="navbar navbar-toggleable-md fixed-top navbar-inverse bg-inverse">
+        <div id="logo">
+          <a href="https://iswc2025.semanticweb.org/" title="ISWC'25">
+            <img src="images/iswc25logo.png" alt="ISWC 2025 logo" class="img-fluid" />
+          </a>
+        </div>
+        <h1>Shaping Knowledge and Interoperable Graphs - ISWC'25 Tutorial</h1>
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#abstract">Abstract</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#slides">Slides</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#topics">Topics</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#schedule">Registration & schedule</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#team">Team</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+
+    <div class="container">
+
+      <section id="abstract">
+        <h3>Abstract</h3>
+        <p>Since Google introduced the use of Knowledge Graphs to enhance search functionality and organize information
+          internally,
+          their adoption and application have grown significantly. Various technologies have been developed to implement
+          Knowledge
+          Graphs, with RDF-based triplestores being a cornerstone of the Semantic Web, while Property Graphs are also
+          widely used
+          in the context of graph databases.
+        <p><a href="https://www.wikidata.org">Wikidata</a>, a well-known Knowledge Graph,
+          provides RDF data through its SPARQL query service, but its data model closely
+          resembles Property Graphs, incorporating features like qualifiers and references.
+        <p>The recent introduction of RDF 1.2
+          aims to bridge the gap between RDF and Property Graphs by enabling statements about
+          statements, offering greater flexibility.</p>
+        <p>Data quality is a critical aspect of Knowledge Graphs, often ensured through validation against predefined
+          data models
+          or shapes. This tutorial will explore several approaches developed for describing and validating RDF, such as
+          <a href="http://shex.io/">ShEx</a> and Shapes Constraint Language (<a
+            href="https://www.w3.org/TR/shacl/">SHACL</a>).
+        </p>
+        <p>Notably, the Data Shapes Working Group has been tasked this
+          year with developing SHACL 1.2, aligning it with RDF 1.2. We will briefly outline these approaches,
+          highlighting their
+          similarities, differences, and recent advancements.</p>
+
+        <p>In the case of Property Graphs, <a href="https://arxiv.org/abs/2211.10962">PGSchema</a> was proposed, as well
+          as other proposals like <a href="https://labra.weso.es/publication/2024_shex_extensions/">PShEx</a> or ProGS,
+          and
+          more recently
+          <a href="https://www.iso.org/standard/76120.html">GQL</a> offers a way to define typed graphs.
+        </p>
+        <p>Wikidata adopted Entity Schemas, which are based on ShEx as well as its own property constraint system, and
+          there is a
+          proposal called <a href="https://www.weso.es/WShEx/">WShEx</a>.</p>
+        <p>This tutorial will explore different types of Knowledge Graphs and approaches for their validation. We will
+          also review practical applications like inferring shapes from existing data and creating conforming subsets of
+          Knowledge Graphs.</p>
+      </section>
+
+      <!--  <section id="slides">
+        <h3>Slides (work in progress)</h3>
+        <ul>
+          <li><a href="slides/01_Tutorial_Intro_and_Motivation.pdf">Introduction and motivation</a></li>
+          <li><a href="slides/02_ShEx_Primer.pdf">Introduction to ShEx</a></li>
+          <li><a href="slides/04_SHACL_Primer.pdf">Introduction to SHACL</a></li>
+          <li><a href="slides/05_ShEx_SHACL_Compared.pdf">ShEx & SHACL compared</a></li>
+          <li><a href="slides/07_ShEx_Extensions.pdf">Extending Shapes for different types of Knowledge
+              Graphs</a>
+          </li>
+          <li><a href="slides/08_Shapes_Applications_and_tools.pdf">Applications</a></li>
+        </ul>
+      </section> -->
+
+      <section id="topics">
+        <h3>Topics</h3>
+        <p>This is a half-day tutorial with the following topics:</p>
+        <ul>
+          <li>Introduction to Knowledge graphs</li>
+          <li>Types of Knowledge Graphs:
+            <ul>
+              <li>RDF graphs</li>
+              <li>Property Graphs</li>
+              <li>Wikidata and Wikibase graphs</li>
+              <li>RDF 1.2</li>
+            </ul>
+          <li>Shaping RDF:
+            <ul>
+              <li>Introduction to ShEx</li>
+              <li>Introduction to SHACL</li>
+              <li>ShEx & SHACL compared</li>
+              <li>Recent advances in ShEx and SHACL (SHACL 1.2)</li>
+            </ul>
+          <li>Shaping other types of Knowledge Graphs
+            <ul>
+              <li>Shaping Wikidata and Wikibase graphs: Entity Schemas and WShEx</li>
+              <li>Shaping property graphs: P-ShEx, PGSchema, etc.</li>
+              <li>Shaping RDF-Star: ShEx-Star</li>
+            </ul>
+          <li>Applications: Inferring shapes from data, Knowledge Graphs Subsets, etc.</li>
+        </ul>
+
+        <p>We plan to devote the first slot to the first 3 items (knowledge graphs as well as Validating RDF
+          technologies, ShEx and SHACL) which are more introductory,
+          and the second slot for the rest of the items, which are more specialised.
+        </p>
+      </section>
+
+      <section id="goals">
+        <h3>Goals</h3>
+        <ul>
+          <li>Attendees will understand the different types of technologies to implement Knowledge Graphs</li>
+          <li>Users will understand the differences between the data models of RDF, Property graphs, Wikibase and
+            RDF-1.2</li>
+          <li>Participants will understand use cases for defining shapes and validating Knowledge Graphs.</li>
+          <li>Participants will be able to create their own RDF data shapes or Schemas and validate instance data
+            against them using ShEx and SHACL.</li>
+          <li>They will see how RDF validation works in ShEx and SHACL.</li>
+          <li>Hands-on experience will leave users comfortable using existing tools to solve practical needs in
+            communicating
+            schemas and verifying instance data conformance.</li>
+          <li>Users will be able to assess and compare the differences between ShEx, SHACL and other validation
+            approachs for property graphs and Wikibase.</li>
+        </ul>
+      </section>
+
+      <h3 id="audience">Tutorial type and intended audience</h3>
+      <ul>
+        <li>Target audience: Anyone interested in Knolwedge Graphs and data quality.</li>
+        <li>Tutorial type: We consider that this is a introductory/specialised tutorial as it can serve as an
+          introduction to
+          people that are not aware of the technologies, but we can also offer specialised knowledge about validating
+          property
+          graphs in the second slot.</li>
+        <li>Prior knowledge: Some rudimentary knowledge of RDF and Turtle is expected, although a short introduction to
+          the
+          RDF data model will be done.</li>
+        <li>Tutorial type: Half day tutorial (14h to 17:40h, 11th November 2024).</li>
+        <li>Materials: We will create a github repository containing the running examples that can be executed online
+          using
+          the following tools:
+          <ul>
+            <li><a href="https://rudof-project.github.io/">rudof</a></li>
+            <li><a href="http://rdfshape.weso.es/">RDFShape</a></li>
+            <li><a href="http://rdfshape.weso.es/">Wikishape</a></li>
+            <li><a href="https://rawgit.com/shexSpec/shex.js/master/doc/shex-simple.html">ShEx Simple Online Tool</a>
+            </li>
+            <li><a href="http://shacl.org/playground/">SHACL playground</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <p>Anyone interested in Semantic Web technologies and tools can attend this tutorial.
+        Some rudimentary knowledge of RDF and Turtle is expected, although a short introduction to the RDF data model
+        will be done.
+      </p>
+
+      <section id="team">
+        <h3>Tutoring team</h3>
+        <ul>
+          <li><a href="http://labra.weso.es">Jose Emilio Labra Gayo</a>.
+            Full Professor at <a href="http://www.uniovi.es">University of Oviedo</a>, Spain.
+            Founder and main researcher of <a href="http://www.weso.es">WESO (Web Semantics Oviedo)</a> research group,
+            which collaborates with different companies around the world applying semantic web technologies.
+            The development of data portals for several companies and public administrations led to his interest on RDF
+            validation.
+            He was a member of the W3C Data Shapes working group and of the W3C community groups:
+            Shape Expressions and SHACL.
+            He implemented the SHACL and ShEx library <a href="http://www.weso.es/shaclex/">SHaclEX</a> in Scala,
+            maintains the online RDF validator services <a href="http://rdfshape.weso.es/">RDFShape</a>
+            and <a href="http://wikishape.weso.es/">WikiShape</a>, and is now implementing the <a
+              href="https://rudof-project.github.io/">rudof</a> library in Rust which can also be used to validate RDF
+            with ShEx, SHACL, DCTAP, etc.
+        </ul>
+      </section>
+
+      <!--<section id="schedule">
+        <h3>Registration and schedule</h3>
+
+        <p>To register, visit: <a href="https://2025.eswc-conferences.org/">ESWC'25</a>
+
+        <p>The tutorial will start at 14:00h and has two slots: 14:00h to 15:30h and 16:00h to 18:00h on Sunday, 1st
+          June 2025 (see
+          <a href="https://2025.eswc-conferences.org/workshops-tutorials/">Conference Program</a>).
+        </p>
+
+      </section> -->
+
+      <section id="examples">
+        <h3>Examples</h3>
+
+        <p>Examples and other material will be available at
+          <a href="https://github.com/validatingrdf/Tutorial">this repository</a>
+        </p>
+
+      </section>
+
+      <br>
+
+    </div> <!-- content -->
+
+
+  </div> <!-- wrapper -->
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
