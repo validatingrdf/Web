@@ -4,5 +4,9 @@ prefix schema: <http://schema.org/>
 
 :Book {
   schema:name   xsd:string    ;
-  schema:author .          +  ;
+  schema:author @:Person   +  ;
+}
+
+:Person {
+  schema:name xsd:string ;
 }
